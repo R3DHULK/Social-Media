@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Round Cycle</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style media="screen">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			overflow: hidden;
+		}
+
+		.container {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			height: 100px;
+			width: 100px;
+			background: #002651;
+			text-align: center;
+			border-radius: 50%;
+		}
+
+		.fa-plus {
+			margin-top: 25px;
+			font-size: 50px;
+			display: block;
+			color: white;
+			cursor: pointer;
+			transition: .7s;
+		}
+
+		.menu_group {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100px;
+			width: 100px;
+			margin: auto;
+			background: #775ada;
+			border-color: #581b98;
+			border-radius: 50%;
+			z-index: -1;
+			transform: scale(0);
+			transition: .7s;
+		}
+
+		.menu_group a {
+			position: absolute;
+			display: inline-block;
+			font-size: 12px;
+			color: #364f6b;
+		}
+
+		a:hover {
+			color: #2c3e50;
+		}
+
+		a:nth-child(1) {
+			top: 6px;
+			left: 45px;
+		}
+
+		a:nth-child(2) {
+			top: 24px;
+			left: 77px;
+		}
+
+		a:nth-child(3) {
+			top: 58px;
+			left: 76px;
+		}
+
+		a:nth-child(4) {
+			top: 78px;
+			left: 42px;
+		}
+
+		a:nth-child(5) {
+			top: 58px;
+			left: 10px;
+		}
+
+		a:nth-child(6) {
+			top: 23px;
+			left: 12px;
+		}
+
+		img {
+			height: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container" onclick="expand()">
+		<i class="fa fa-plus" id="plus"></i>
+	</div>
+	<div class="menu_group" id="menu">
+		<a href="https://www.youtube.com/@sumalya" target="_blank"><img src="./youtube.png" /></a>
+		<a href="https://www.instagram.com/r3dh_ulk/" target="_blank"><img
+				src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
+		<a href=" " target="_blank"><img src="https://img.icons8.com/officel/80/000000/facebook-circled.png" /></a>
+		<a href="https://codepen.io/R3DHULK" target="_blank"><img src="./codepen.png" /></a>
+		<a href="https://telegram.me/r3dhulk" target="_blank"><img src="https://img.icons8.com/color/96/000000/telegram-app.png" /></a>
+		<a href="https://github.com/R3DHULK/" target="_blank"><img src="./github.png" /></a>
+	</div>
+	<script type="text/javascript">
+		var menu = document.getElementById('menu');
+		var plus = document.getElementById('plus');
+		var abc = 0;
+
+		function expand() {
+			if (abc == 0) {
+				menu.style.transform = "scale(3)";
+				plus.style.transform = "rotate(360deg)";
+				abc = 1;
+			} else {
+				menu.style.transform = "scale(0)";
+				plus.style.transform = "rotate(0deg)";
+				abc = 0;
+			}
+		}
+
+	</script>
+</body>
+
+</html>

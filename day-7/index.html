@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <title>Glassmorphic Social Media Icon</title>
+</head>
+
+<style>
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: #111827;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15rem;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        height: fit-content;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .social-icons li {
+        margin: 10px 10px;
+    }
+
+    .social-icons li a {
+        font-size: 30px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        transition: 0.5s ease;
+        text-shadow: 0 0 30px;
+    }
+
+    .social-icons li a::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(1px) saturate(180%);
+        -webkit-backdrop-filter: blur(6px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0);
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    .social-icons li a:hover {
+        text-shadow: 0 0 0px;
+    }
+</style>
+
+<body>
+    <ul class="social-icons">
+        <li>
+            <a href="https://www.facebook.com/R3DHULK/" target="_blank" style="color: rgb(26, 136, 226);"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/@sumalya" target="_blank" style="color: red;"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+            <a href="https://telegram.me/r3dhulk" target="_blank" style="color: #6DD5FA;"><i class="fab fa-telegram"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/r3dh_ulk" target="_blank" style="color: #e6790d;"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+            <a href="https://github.com/R3DHULK/" target="_blank" style="color: rgba(117, 11, 127, 0.667);"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+            <a href="https://www.hackerrank.com/sumalyachatterj1?hr_r=1" target="_blank" style="color: rgb(10, 196, 13);"><i class="fab fa-hackerrank"></i></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/sumalya-chatterjee-676b31262" target="_blank" style="color: #0bd4f3;"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+            <a href="https://codepen.io/R3DHULK" target="_blank" style="color: rgba(70, 69, 90, 0.667);"><i class="fab fa-codepen"></i></a>
+        </li>
+        <li>
+            <a href="https://r3dhulk.medium.com" target="_blank" style="color: rgb(195, 205, 21);"><i class="fab fa-medium"></i></a>
+        </li>
+    </ul>
+</body>
+
+</html>

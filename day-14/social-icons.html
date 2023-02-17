@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Social Media icons with hover and inverse actions</title>
+
+
+
+    <style>
+        body {
+            background-color: #111827;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: 50px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .social-icons li {
+            margin: 0 10px;
+        }
+
+        .social-icons li a {
+            font-size: 30px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            transition: 0.5s ease;
+        }
+
+        .social-icons li a:hover {
+            background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-size: 40px;
+        }
+
+        .social-icons li a::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-image: linear-gradient(#39fcff, #192ac5, #8e2db4);
+            transform: scale(1);
+            transition: 0.5s ease-in-out;
+        }
+
+        .social-icons li a:hover::before {
+            transform: scale(0);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="social-icons">
+        <div>
+            <li>
+                <a href="https://www.facebook.com/R3DHULK/" target="_blank">
+                    <i class="fab fa-facebook">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/r3dh_ulk/" target="_blank">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/R3DHULK/" target="_blank">
+                    <i class="fab fa-github">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@sumalya" target="_blank">
+                    <i class="fab fa-youtube">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://telegram.me/r3dhulk" target="_blank">
+                    <i class="fab fa-telegram">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/sumalya-chatterjee-676b31262" target="_blank">
+                    <i class="fab fa-linkedin">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://codepen.io/R3DHULK" target="_blank">
+                    <i class="fab fa-codepen">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.hackerrank.com/sumalyachatterj1?hr_r=1" target="_blank">
+                    <i class="fab fa-hackerrank">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://r3dhulk.medium.com/" target="_blank">
+                    <i class="fab fa-medium">
+                    </i>
+                </a>
+            </li>
+    </ul>
+    </div>
+</body>
+
+</html>
